@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/shouye"
+        android:title="首页"
+        android:icon="@drawable/shouye" />
+    <item
+        android:icon="@drawable/history"
+        android:title="历史纪录"
+        android:id="@+id/history"/>
+
+</menu>
