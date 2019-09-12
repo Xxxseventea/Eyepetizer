@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         tablayout = findViewById(R.id.main_tablayout);
         drawerLayout = findViewById(R.id.drawer);
         navigationView = findViewById(R.id.navigation);
-        navigationView.setCheckedItem(R.id.shouye); //默认选中
+//        navigationView.setCheckedItem(R.id.shouye); //默认选中
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {

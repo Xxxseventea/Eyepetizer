@@ -49,7 +49,7 @@ public class KeySearch extends AppCompatActivity {
                             intent.putExtra("name",name);
                             intent.putExtra("description",description);
                             startActivity(intent);
-                            searchListDbOperation = new SearchListDbOperation(KeySearch.this,NAME);
+                            searchListDbOperation = new SearchListDbOperation(KeySearch.this,"History");
                             searchListDbOperation.add(head,name,title);
                             searchListDbOperation.check();
                         }

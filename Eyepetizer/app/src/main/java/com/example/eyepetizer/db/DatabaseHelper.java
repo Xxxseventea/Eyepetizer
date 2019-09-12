@@ -9,7 +9,7 @@ public class DatabaseHelper  extends SQLiteOpenHelper {
    public static final String NAME = "History";
     private static final int VERSION = 1;
     private static final String SWORD = "SWORD";
-    private static final String CREATE_BOOK = "create table NAME("
+    private static final String CREATE_BOOK = "create table History("
             +"id integer primary key autoincrement,"
             + "image text(400),"
             + "title text(400),"

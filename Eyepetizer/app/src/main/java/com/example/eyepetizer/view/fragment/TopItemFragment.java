@@ -57,7 +57,7 @@ public class TopItemFragment extends Fragment {
                             intent.putExtra("description",description);
                             startActivity(intent);
 
-                            searchListDbOperation = new SearchListDbOperation(getContext(), NAME);
+                            searchListDbOperation = new SearchListDbOperation(getContext(), "History");
                             searchListDbOperation.add(head,name,title);
                             searchListDbOperation.check();
                         }

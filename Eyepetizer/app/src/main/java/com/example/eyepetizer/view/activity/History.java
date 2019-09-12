@@ -25,6 +25,7 @@ import static com.example.eyepetizer.db.DatabaseHelper.NAME;
 public class History extends AppCompatActivity {
     private RecyclerView recyclerView;
     DatabaseHelper databaseHelper;
+    SearchListDbOperation searchListDbOperation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +34,7 @@ public class History extends AppCompatActivity {
         recyclerView = findViewById(R.id.listview);
 
         final ArrayList<HistoryBean> historyBeans = new ArrayList<>();
-        final SearchListDbOperation searchListDbOperation = new SearchListDbOperation(this,NAME);
+        searchListDbOperation = new SearchListDbOperation(this,"History");
         searchListDbOperation.addList(historyBeans);
         HistoryAdapter adapter = new HistoryAdapter(this,historyBeans);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -43,7 +44,7 @@ public class History extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                searchListDbOperation.deleteData(historyBeans,NAME);
+                searchListDbOperation.deleteData(historyBeans,"History");
             }
         });
     }
